@@ -3,7 +3,7 @@
   li {
     @include u-line-height('body', 5);
     @include u-margin-bottom(1);
-    @include u-measure($theme-text-measure-wide);
+    @include u-measure(none);
   }
 
   svg {
@@ -43,7 +43,7 @@
     list-style: none;
     padding-left: 0;
     > li {
-      @include u-measure($theme-text-measure-wide);
+      //@include u-measure($theme-text-measure-wide);
       @include u-margin-bottom(1);
       @include u-display('flex');
     }
@@ -60,4 +60,5 @@
       padding-bottom: 0;
     }
   }
+  max-width: 88ex;
 }
